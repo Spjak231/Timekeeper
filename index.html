@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clock_dial noneShow">
+        <div class="center_dot"></div>
+
+        <div class="numbers hour1">1</div>
+        <div class="numbers hour2">2</div>
+        <div class="numbers hour3">3</div>
+        <div class="numbers hour4">4</div>
+        <div class="numbers hour5">5</div>
+        <div class="numbers hour6">6</div>
+        <div class="numbers hour7">7</div>
+        <div class="numbers hour8">8</div>
+        <div class="numbers hour9">9</div>
+        <div class="numbers hour10">10</div>
+        <div class="numbers hour11">11</div>
+        <div class="numbers hour12">12</div>
+
+        <div class="Hour_arrow_container" id="hour">
+            <div class="Hour_arrowParent">
+                <div class="line"></div>
+                <div class="arrow">></div>
+            </div>
+        </div>
+
+        <div class="minute_arrow_container" id="min">
+            <div class="minute_arrowParent">
+                <div class="line"></div>
+                <div class="arrow">></div>
+            </div>
+        </div>
+
+        <div class="second_arrow_container" id="sec">
+            <div class="second_arrowParent">
+                <div class="line"></div>
+                <div class="arrow">></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="timer" onclick="showtimer()">
+        <div class="outer">
+            <h1></h1>
+        </div>
+        <div class="inputTime">
+            <input type="number" placeholder="HH" id="hh">
+            <input type="number" placeholder="MM" id="mm">
+            <input type="number" placeholder="SS" id="ss">
+        </div>
+        <div class="buttonSofContorls">
+            <div class="start btn1" onclick="startTimer()" id="starting">Start</div>
+            <div class="stop btn1" onclick="resumeTimer()" id="resumeing">Resume</div>
+            <div class="reset btn1" onclick="pauseTimer()" id="pauseing">Pause</div>
+        </div>
+    </div>
+
+    <div class="stopwatchContainer">
+        <div class="showtime">
+            <h1></h1>
+        </div>
+        <!-- <div class="records"></div> -->
+    </div>
+
+    <div class="btn" onclick="showClock()">Clock</div>
+    <div class="btn" onclick="showStopwatch()">Stopwatch</div>
+    <div class="btn" onclick="showtimer()">Timer</div>
+    <div class="inputTimeOf"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

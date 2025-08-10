@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    height: 70px;
+    width: 200px;
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: transform 0.2s ease;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 4px yellow;
+}
+
+.noneShow {
+    display: none;
+}
+
+.clock_dial {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    position: relative;
+}
+
+.center_dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.numbers {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+
+.hour1 {
+    position: absolute;
+    top: 25px;
+    right: 97px;
+}
+
+.hour2 {
+    position: absolute;
+    top: 96px;
+    right: 27px;
+}
+
+.hour3 {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+}
+
+.hour4 {
+    position: absolute;
+    bottom: 96px;
+    right: 27px;
+}
+
+.hour5 {
+    position: absolute;
+    bottom: 25px;
+    right: 97px;
+}
+
+.hour6 {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+}
+
+.hour7 {
+    position: absolute;
+    bottom: 25px;
+    left: 97px;
+}
+
+.hour8 {
+    position: absolute;
+    bottom: 96px;
+    left: 27px;
+}
+
+.hour9 {
+    position: absolute;
+    left: 2px;
+    top: 50%;
+}
+
+.hour10 {
+    position: absolute;
+    top: 96px;
+    left: 27px;
+}
+
+.hour11 {
+    position: absolute;
+    top: 25px;
+    left: 97px;
+}
+
+.hour12 {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+}
+
+.minute_arrow_container,
+.Hour_arrow_container,
+.second_arrow_container {
+    height: 300px;
+    width: 300px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Hour_arrowParent {
+    height: 30%;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.minute_arrowParent {
+    height: 40%;
+    width: 2px;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.second_arrowParent {
+    height: 45%;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: -11px;
+    left: -6px;
+    transform: rotate(-90deg);
+}
+
+
+/* ============================= timer style=============================*/
+h1 {
+    color: wheat;
+    font-size: 4rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+}
+
+input {
+    height: 40px;
+}
+
+.outer {
+    height: 130px;
+    width: 350px;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 10px rgb(27, 27, 255);
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 30px;
+}
+
+.timer {
+    display: none;
+}
+
+
+.btn1 {
+    height: 70px;
+    width: 200px;
+    background: rgb(68, 68, 68);
+    border-radius: 10px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: transform 0.2s ease;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 4px yellow;
+}
+
+.inputTime input {
+    height: 40px;
+    width: 90px;
+    margin: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    /* Light gray for soft look */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.inputTime input:hover {
+    outline: none;
+    box-shadow: 0 0 12px 2px #007bff;
+    /* Blue focus ring */
+}
+
+.inputTime input:focus {
+    outline: none;
+    box-shadow: 0 0 12px 2px #ff2f00;
+    /* Blue focus ring */
+}
+
+.stop,
+.reset {
+    display: none;
+}
+
+.buttonSofContorls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* ===================== stopwatch style ============================ */
+
+.stopwatchContainer {
+    height: 100px;
+    width: 300px;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 10px rgb(27, 27, 255);
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 30px;
+}
